@@ -47,9 +47,9 @@ Print statistics.
 """
 
 print()
-print("{:<10}{:.0f}".format("min", np.min(nps)))
-print("{:<10}{:.0f}".format("max", np.max(nps)))
-print("{:<10}{:.0f}".format("stddev", np.std(nps)))
-print("{:<10}{:.0f}".format("mean", np.mean(nps)))
-print("{:<10}±{:.0f}".format(
+print("{:<10}{:.0f} nps".format("min", np.min(nps)))
+print("{:<10}{:.0f} nps".format("max", np.max(nps)))
+print("{:<10}{:.0f} nps".format("stddev", np.std(nps)))
+print("{:<10}{:.0f} nps".format("mean", np.mean(nps)))
+print("{:<10}±{:.0f} nps".format(
     "95% CI", 1.96*np.std(nps)/np.sqrt(num_runs)))  # All distributions are Gaussian, right?
